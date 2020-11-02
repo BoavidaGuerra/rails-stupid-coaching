@@ -1,0 +1,11 @@
+<section id="ask" class="my-4 p-3">
+  <h2 class="user input"><%= params[:question] %></h2>
+  <p class="user author">- You</p>
+</section>
+
+<section id="answer" class="my-4 p-3">
+  <h2 class="coach input"><%= @answer %></h2>
+  <p class="coach author">-Your Coach</p>
+</section>
+
+<%= link_to 'Ask a new question', ask_path %>
